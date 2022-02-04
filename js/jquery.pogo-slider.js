@@ -53,6 +53,7 @@
 
     'use strict';
 
+
     var supportsCSSProp = function(featurename) {
 
         var feature = false;
@@ -93,8 +94,8 @@
     var pluginName = 'pogoSlider';
 
     var defaults = {
-        autoplayTimeout: 4000,
-        autoplay: true,
+        autoplayTimeout:1000 ,
+        autoplay: false,
         baseZindex: 1,
         displayProgess: true,
         onSlideStart: null,

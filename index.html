@@ -9,6 +9,72 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
+    <style type="text/css">
+        .logoheading{
+                        position: absolute;
+    font-size: 20px;
+    font-family: 'Dancing Script';
+    left: 14%;
+    top: 52%;
+    color: #D0F8FF;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+             0 0 40px #A5F1FF;
+        }
+
+        .andriodbox{
+                    display: -webkit-box;
+    height: auto;
+    padding: 5px;
+    column-gap: 5px;
+    width: 100%;
+    overflow: scroll;
+    background-color: yellowgreen;
+        border-radius: 20px;
+
+        }
+ 
+
+        .andriodbox .app{
+                background-color:transparent;
+    height: auto;
+    width: 400px;
+    padding: 5px;
+    border-radius: 3px;
+        }
+.andriodbox .app #apptitle{
+        font-family: -webkit-pictograph;
+    font-size: 20px;
+    color: black;
+    margin-left: 38%;
+}
+.andriodbox .app #applogo{
+       margin-left: 40%;
+}
+  
+#appdesc{
+    text-align: justify;
+}
+
+#appstoreicon{
+    margin-left: 15%;
+}
+
+.andriodbox::-webkit-scrollbar {
+  width: 1px;
+  height: 5px;
+}
+ 
+.andriodbox::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+}
+ 
+.andriodbox::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+    </style>
+
 	<title>homepage</title>
 </head>
 <body>
@@ -17,25 +83,12 @@
             <div class="top-bar">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7 col-lg-6 col-sm-8">
-                            <div class="call-to-action">
-                                <p><i class="fa fa-envelope-o"></i>Email: <a href="#">info@restaurant.com</a></p>
-                                <p><i class="fa fa-phone"></i>Telephone: <a href="#">+1 800 234 5678</a></p>
-                            </div>
-                        </div>
+                        
                         <div class="col-md-5 col-lg-6 col-sm-4">
                             <div class="book-table-popup">
-                                <a href="#reservation-form-modal" data-toggle="modal">Book a table</a>
+                                <a href="reg.html" data-toggle="modal">Signup for Early Access</a>
                             </div>
-                            <div class="top-social-bookmark">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-feed"></i></a></li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -47,34 +100,27 @@
                 <nav class="navbar">
                     <div class="container">
                         <div class="navbar-header">
-                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a href="#home" class="navbar-brand"><img src="img/main_logo_black.png" alt="logo"></a>
-                            <a href="#home" class="navbar-brand white"><img src="img/main_logo.png" alt="logo"></a>
-                        </div>
-                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                            
+                           
+                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy" style="    position: absolute;
+    right: 5%;">
                             <div class="search-form-area">
                                 <div class="search-form-overlay"></div>
-                                <a class="search-form-trigger" href="#search-form">Search<span></span></a>
+                                <span class="glyphicon glyphicon-search"></span>
+                                <a class="search-form-trigger" href="#search-form"></a>
                                 <div id="search-form" class="search-form">
                                     <form>
+
                                         <input type="search" placeholder="Search...">
                                     </form>
                                 </div>
                             </div>
                             <ul id="nav" class="nav navbar-nav">
                                 <li class="active"><a href="#home">Home</a> </li>
-                                <li><a href="#about">about us</a></li>
-                                <li><a href="#promotion">Offer</a></li>
-                                <li><a href="#menu">Menu</a></li>
-                                <li><a href="#team">team</a></li>
-                                <li><a href="#blog">blog</a></li>
-                                <li><a href="#gallery">Gallery</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                 <li><a href="#andriod">Andriod</a></li>
+                                  <li><a href="#ios">IOS</a></li>
+                                <li><a href="#categories">Categories</a></li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -84,57 +130,269 @@
         </div>
         <div class="slider-area">
             <div class="pogoSlider">
-                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background:url(img/slider/slide_1.jpg) no-repeat scroll 0 0 / cover;">
-                    <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="flipX" data-duration="700">Welcome to</h2>
-                    <h1 class="pogoSlider-slide-element" data-in="expand" data-out="flipX" data-duration="1500"><span>Dawat</span> Cafe & Restaurant</h1>
-                    <h3 class="pogoSlider-slide-element" data-in="slideUp" data-out="flipX" data-duration="700"><a href="#reservation-form-modal" data-toggle="modal">Reservation Now</a></h3>
+                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background:url(img/slider/slide_1.png) no-repeat scroll 0 0 / cover;">
+                    <h2 class="pogoSlider-slide-andriodboxent" data-in="slideDown" data-out="flipX" data-duration="700">Welcome to</h2>
+                    <h1 class="pogoSlider-slide-andriodboxent" data-in="expand" data-out="flipX" data-duration="1500"><span>App</span> Downloader</h1>
+                    <h3><a href="#andriod">Download NOW</a></h3>
                 </div>
-                <div class="pogoSlider-slide" data-transition="fade" style="background:url(img/slider/slide_2.jpg) no-repeat scroll 0 0 / cover;">
-                    <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="flipX" data-duration="700">Our menus</h2>
-                    <h1 class="pogoSlider-slide-element" data-in="expand" data-out="flipX" data-duration="1500">See What's <span>new</span> today</h1>
-                    <h3 class="pogoSlider-slide-element" data-in="slideUp" data-out="flipX" data-duration="700"><a href="#menu">Todays Menu</a></h3>
-                </div>
-                <div class="pogoSlider-slide" data-transition="fade" style="background:url(img/slider/slide_3.jpg) no-repeat scroll 0 0 / cover;">
-                    <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="flipX" data-duration="700">Get ready</h2>
-                    <h1 class="pogoSlider-slide-element" data-in="expand" data-out="flipX" data-duration="1500">to <span>Join</span> with us</h1>
-                    <h3 class="pogoSlider-slide-element" data-in="slideUp" data-out="flipX" data-duration="700"><a href="#reservation-form-modal" data-toggle="modal">Book A Table</a></h3>
-                </div>
+                
+                
             </div>
         </div>
 
     </header>
 
-    <section class="about-area section-padding" id="about">
-        <div class="container wow fadeIn">
-            <div class="row">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <div class="area-title text-center">
-                        <h2>Our Story</h2>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <div class="about-content">
-                        <p><span class="big-text">M</span> enc non elit libero. Quisque massa porta ut placerat lentesque non diam. Nam convallis porta rhoncus. Maecenas varius eget turpis suscipit porta sapien tinc Mauris tempor libero fringilla orci vivrra
-                            faucibue fringilla orci vivrra faucibus. Integer ullamcorper erat in tellus efficitur, quis porta sapien tincidunt. Nunc mattis lectus sed semper semper. </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <div class="right-about-content">
-                        <p>Quisque sit amet turpis et ipsum elementum facilisis. Quisque sed placerat libero. Pellentesque nec tellus sollicitudin, sollicitudin ligula non, tristique nibh Donec vitae turpis sagittis, cursus nunc ac, aliquet nunc. Donec viverra
-                            vel massa at posuere. Aliquam et fringilla augue consequat posuere sem, eu ornares viverra veleso massa at posuere. Aliquam et fringilla augue</p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <div class="about-author-sign text-center">
-                        <img src="img/about/about_sign.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="about-area section-padding" id="andriod" >
+        <div class="andriodtopbar" style="padding: 10px;"><img style="    height: 60px;
+    float: center;
+    margin-left: 45%;" src="img/andriod.png"></div>
+
+
+        <div class="andriodbox" >
+  
+    <div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div>
+     <div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="#" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+
+        
+    </div>
+
+
+</div>
+
+
+
     </section>
-    
+<br>
+    <section id="ios">
+        <div class="andriodtopbar" style="padding: 10px;"><img style="    height: 60px;
+    float: center;
+    margin-left: 45%;" src="img/iphone.png"></div>
+        <div class="andriodbox" >
+  
+    <div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div>
+     <div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+    </div><div class="app"><img src="img/bluestacks.png" id="applogo">
+        <p id="apptitle">Vidmate</p>
+        <p id="appdesc" >A free and powerful Android emulator for Windows
+BlueStacks App Player is a free and powerful Android emulator that you can use to run Android applications on your Windows PC. Packed with features...</p>
+         <a href="#" id="appstoreicon"><img src="https://eatclub.com.au/wp-content/uploads/2017/09/App-Store-Button-e1505833612800.png"></a>
+         <a href=""><img src="https://eatclub.com.au/wp-content/uploads/2017/09/Play-Store-Button-e1505833645857.png"></a>
+
+        
+    </div>
 
 
+</div>
+    </section>
+ <br>
+
+ <section id="categories"></section>
+<br><br>
+<footer class="footer" id="footer">
+  
+  <span class="col">
+    <h3 class="col-title">Info</h3>
+    <nav class="col-list">
+      <ul>
+        <li><a href="#">Formats</a></li>
+        <li><a href="#">Compression</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Status</a></li>
+      </ul>
+    </nav>
+  </span>
+  
+  <span class="col">
+    <h3 class="col-title">Resources</h3>
+    <nav class="col-list">
+      <ul>
+        <li><a href="#">Developer API</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+  </span>
+
+  <span class="col">
+    <h3 class="col-title">Company</h3>
+    <nav class="col-list">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </nav>
+  </span>
+  
+  <span class="col">
+    <div class="subscribe-form-holder">
+      <h3 class="form-title">Subscribe to our email newsletter</h3>
+      <form action="#" onsubmit="return false" class="subscribe-form">
+        <input type="email" name="email" id="email" class="email subscribe-input" autocomplete="off" placeholder="Your email">
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+      </form>
+    </div>
+    <div class="social-media">
+      <h3 class="social-col-title">Follow us</h3>
+      <ul class="social-media-list">
+        <li><a href="#" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a></li>
+        <li><a href="#" class="twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a></li>
+        <li><a href="#" class="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a></li>
+      </ul>
+    </div>
+  </span>
+  
+</footer>
     <script src="js/otherjs/jquery-1.12.4.min.js"></script>
     <script src="js/otherjs/bootstrap.min.js"></script>
     <script src="js/jquery.pogo-slider.js"></script>

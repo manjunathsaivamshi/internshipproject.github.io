@@ -87,10 +87,7 @@ input:-webkit-autofill:focus {
     background: #fff none repeat scroll 0 0;
 }
 
-.is-sticky .navbar-header .collapse,
-.is-sticky .navbar-toggle {
-    border: 2px solid #1a1a1a;
-}
+
 
 .is-sticky .navbar-toggle .icon-bar {
     background: #1a1a1a none repeat scroll 0 0;
@@ -128,7 +125,7 @@ input:-webkit-autofill:focus {
 }
 
 .section-padding {
-    padding: 100px 0;
+    padding: 0 0;
 }
 
 .no-padding {
@@ -166,7 +163,7 @@ input:-webkit-autofill:focus {
 }
 
 .book-table-popup {
-    float: right;
+    float: left;
     padding: 5px;
 }
 
@@ -202,8 +199,8 @@ input:-webkit-autofill:focus {
 }
 
 .book-table-popup a {
-    background: #ca3d26 none repeat scroll 0 0;
-    color: #fff;
+    background: #D0F8FF none repeat scroll 0 0;
+    color: black;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -293,7 +290,7 @@ ul#nav li a {
 }
 
 ul#nav li.active a::before {
-    background: #ca3d26 none repeat scroll 0 0;
+    background: #D0F8FF none repeat scroll 0 0;
     content: "";
     height: 2px;
     left: 0;
@@ -306,7 +303,7 @@ ul#nav li.active a::before {
 
 ul#nav li:hover a,
 ul#nav li.active a {
-    color: #ca3d26;
+    color: #D0F8FF;
 }
 
 .top-bar {
@@ -341,7 +338,7 @@ ul#nav li.active a {
 
 .is-sticky ul#nav li.active a,
 .is-sticky ul#nav li:hover a {
-    color: #ca3d26;
+    color: #D0F8FF;
 }
 
 .is-sticky .signup-and-login-button ul li {
@@ -419,8 +416,8 @@ a.home-reservation-button {
 .slider-area h3 a:hover,
 a.home-reservation-button:hover {
     color: #fff;
-    background: #ca3d26 none repeat scroll 0 0;
-    border-color: #ca3d26;
+    background: #D0F8FF none repeat scroll 0 0;
+    border-color: #D0F8FF;
 }
 
 .pogoSlider {
@@ -634,8 +631,140 @@ a.search-form-trigger::before {
 ------------------------------*/
 
 .about-area {
-    background: rgba(0, 0, 0, 0) url("img/about/home_three_about_bg.png") no-repeat scroll center bottom / contain;
+/*    background: rgba(0, 0, 0, 0) url("img/andriod.jpg") no-repeat scroll center bottom / contain;*/
     position: relative;
+}
+
+:root{
+  --footer-bg: #1C2444;
+  --color: #F2F3FB;
+  --color-smooth: #9DA2AE;
+  --input-border: #3A456A;
+  --btn-bg-color: #F1F2FC;
+  --btn-hover-bg: #D5D9F6;
+  --btn-color: #1E2641;
+}
+
+footer{
+  font-size: 16px;
+  background: var(--footer-bg);
+  padding: 2em 4em;
+  display: flex;
+  align-items: start;
+  justift-content: center;
+  gap: 1em;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+footer ul{
+  list-style: none;
+}
+
+.col{
+  flex: 1;
+}
+
+.col-title{
+  font-family: 'Merriweather', serif;
+  color: var(--color);
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: .5em 0;
+}
+
+.col-list a{
+  color: var(--color-smooth);
+  text-decoration: none;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.col-list a:hover, .col-list a:focus{
+  text-decoration: underline;
+}
+
+.subscribe-form, .social-media{
+  display: flex;
+  gap: .5em;
+  padding: .5em 0;
+}
+
+.subscribe-input{
+  width: auto;
+  flex: 1;
+  background: transparent;
+  border: .06em solid var(--input-border);
+  font-size: 1em;
+  font-weight: 500;
+  padding: .5em;
+  border-radius: .3em;
+  transition: all .25s ease 0s;
+  display: inline-block;
+  color: var(--color-smooth);
+}
+
+.subscribe-input:focus{
+  outline: none;
+  border-color: var(--color);
+  color: var(--color);
+}
+
+.subscribe-btn{
+  background: var(--btn-bg-color);
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  padding: .5em;
+  border-radius: .3em;
+  transition: all .25s ease 0s;
+  display: inline-block;
+  color: var(--btn-color);
+  cursor: pointer;
+}
+
+.subscribe-btn:hover, .subscribe-btn:focus{
+  background: var(--btn-hover-bg);
+}
+
+.form-title, .social-col-title{
+  font-size: 1em;
+  color: var(--color);
+  font-weight: 500;
+}
+
+.social-media{
+  flex-direction: column;
+}
+
+.social-media-list{
+  display: flex;
+  gap: .5rem;
+}
+
+.social-media-list a{
+  padding: .5em;
+  color: var(--color-smooth);
+  display: flex;
+  border-radius: .3em;
+  transition: all .25s ease 0s;
+}
+
+.social-media-list a:hover, .social-media-list a:focus{
+  color: var(--color);
+  background: #ffffff1a;
+}
+
+.social-media-list svg{
+  width: 1.5em;
+  height: 1.5em;
+  transition: all .25s ease 0s;
+}
+
+@media screen and (max-width: 750px){
+  footer{
+    padding: 2em;
+    flex-direction: column;
+  }
 }
 
 .about-area::after,
@@ -646,7 +775,7 @@ a.search-form-trigger::before {
 .team-area::before,
 .gallery-area::after,
 .footer-area::after {
-    background: rgba(0, 0, 0, 0) url("img/icons/tri-promo-bottom-white.png") repeat scroll 0 0;
+/*    background: rgba(0, 0, 0, 0) url("img/andriod.jpg") repeat scroll 0 0;*/
     content: "";
     height: 7px;
     left: 0;
